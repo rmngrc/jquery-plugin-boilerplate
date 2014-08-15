@@ -1,10 +1,13 @@
 ;(function($, window, document, undefined) {
 
-  var pluginName = 'boilerplate';
+  var pluginName = 'boilerplate',
+      pluginVerion = '0.1.0';
+
+  // Default settings of the plugin
   var defaults = {};
 
-  // Define your private variables here.
-
+  // Define other variables here
+  var otherVariable = {};
 
   function Plugin(element, options) {
     var self = this;
@@ -12,8 +15,9 @@
     self._options = options;
     self._settings = $.extend(defaults, self._options);
 
-    // Do more stuff here.
-
+    // Do more stuff here
+    // ...
+    
     this.init();
   }
 
@@ -68,7 +72,7 @@
    * @return {Void}
    */
   Plugin.prototype.destroy = function() {
-    
+
   };
 
 
